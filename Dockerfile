@@ -13,6 +13,6 @@ COPY . /app-flask/
 RUN pip install --upgrade pip && \
     pip install pipenv && \
     pip install Flask && pip install Jinja2 && pip install requests
-ADD . /app
+ADD . /app-flask
 EXPOSE 5000
 CMD flask run --host=0.0.0.0
